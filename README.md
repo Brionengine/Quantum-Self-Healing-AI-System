@@ -7,14 +7,6 @@ This self-healing AI system leverages a hybrid quantum-classical architecture to
 3. **Auto-Scaler** - Dynamically scales resources based on real-time demand.
 4. **Quantum Auto-Patching** - Ensures that system modules are autonomously updated and patched as needed.
 
-## Key Features
-### GPT Builder Integration
-- The system is designed to interface smoothly with GPT Builder, enabling extended functionality and adaptable intelligence modules.
-- Integration logic within `MainIntegrationLogic_QuantumSystemIntegrator.py` serves as the primary bridge for this. The integrator class allows GPT Builder to interface directly with the quantum and classical system components.
-- Instructions:
-  1. Ensure GPT Builder has access to this system's directory.
-  2. Start `SelfHealingAI.start()` to enable system communication with GPT Builder.
-
 ### Quantum Auto-Patching (Self-Updating)
 - The system includes a quantum auto-patching mechanism, utilizing periodic checks for module updates. It uses existing resources like `quantum_monitor.py` and `auto_scale_system.py` for autonomous updates.
 - The monitor triggers updates when significant deviations are detected, while `auto_scale_system.py` handles the deployment of these patches across resources.
